@@ -8,7 +8,7 @@ This is a simple Todo application built using React.js. It allows users to add n
 
 ## Technologies Used
 - React.js: A JavaScript library for building user interfaces.
-- HTML/CSS: For structuring and styling the application.
+- HTML/SCSS: For structuring and styling the application.
 
 ## Setup
 To run this application locally, follow these steps:
