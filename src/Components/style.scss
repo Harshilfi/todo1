@@ -1,0 +1,89 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--black);
+}
+@mixin container{
+    padding: 6px 10px;
+    background-color: var(--white1);
+    border: 2px solid var(--shadow);
+    box-shadow: 0px 3px var(--shadow) inset;
+}
+@mixin button{
+    &:active{
+        box-shadow: none;
+        transform: translateY(3px);
+    }
+    border: 2px solid var(--black);
+    border-radius: var(--radius);
+    padding: 3px 10px;
+    box-shadow: 0px 2px var(--black);
+    font-weight: 600;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+.task-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    h1{
+        font-size: 3rem;
+    }
+    div{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between
+        
+    }
+    input{
+        @include container;
+        border-radius: var(--radius);
+        width: 100%;
+    }
+    button{
+        background-color: var(--yellow);
+        @include button;
+    }
+    ::placeholder{
+        color:rgba(0, 0, 0, 0.227);
+    }
+
+}
+.task-list{
+    @include container;
+    border-radius: 15px;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    ul {
+        list-style-type: none;
+    }
+    li{
+        margin: 20px auto;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--gray);
+        padding: 5px 10px;
+        border: 2px solid var(--shadow);
+        box-shadow: 0px 3px var(--shadow);
+        border-radius: var(--radius);
+
+        button{
+            @include button;
+            background-color: rgb(172, 19, 34);
+            color: var(--white);
+            
+        }
+    }
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:rgba(0, 0, 0, 0.201);
+    border-radius: 999px;
+  }

@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all linear 50ms;
+}
+:root{
+  --white:#efefef;
+  --gray:#cbcbcb;
+  --shadow:#4f4f4f;
+  --black:rgb(45, 45, 45);
+  --radius:7px;
+  --white1:rgb(224, 224, 224);
+  --yellow:rgb(234, 234, 86);
+}
+.App {
+  text-align: center;
+  background-color:var(--gray) ;
+  height: 70vh;
+  width:50vw ;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid var(--shadow);
+  box-shadow: 0px 5px var(--shadow), -2px 2px var(--white) inset;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    height: 90vh;
+    width: fit-content;
+    margin: 5%;
+  }
+}
