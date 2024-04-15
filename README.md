@@ -28,8 +28,8 @@ To run this application locally, follow these steps:
 - To add a new task, type the task in the input field and press Enter or click the "Add" button.
 - To delete a task, click on the delete button next to the task.
 
-## Demo
-[Add demo link here]
+## Live App
+(https://little-todo.netlify.app/)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
